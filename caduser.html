@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zé da Manga</title>
+<script>
+	function imprestimo(){
+		var sal = 1320;
+		var impmax = 2640 / 10;
+		if((sal * 0.2) > impmax){
+			alert('Emprestimo Liberado');
+		}
+		else{
+			alert('SEU POBRE!!!');
+		}
+	}
+	function jorge(){
+		alert('Você foi AVISADO!');
+	}
+</script>
+</head>
+	<form style="">
+		<table >
+			<tr>
+				<td>Nome:<input type="text" id="txtnome"></td>
+				<td>CPF:<input type="text" id="txtcpf"></td>
+			</tr>
+			<tr>
+				<td>Telefone:<input type="text" id="txttel1"></td>
+				<td>Matrícola:<input type="text" id="txtmatricula"></td>
+			</tr>
+		</table>
+		<input type="button" id="cadbutton" value="Submit" onclick="jorge();">
+		<input type="button" id="cal" value="CALCULAR" onclick="imprestimo();">
+	</form>
+</html>
+
